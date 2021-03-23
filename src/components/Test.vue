@@ -11,9 +11,13 @@
 
     <!--Funciona cuando el usuario está tipeando
     <input type="text" v-on:keyup.enter="typing">
+    las directivas permiten decirle a Vue que interprete el texto como un html
+    sirve para manipular el DOM
   -->
-<div>
-  {{msg}}
+<div v-html="tasks">
+  <div v-if="showName">
+    <p>Eres verdadero</p>
+  </div>
 </div>
 
   </div>
@@ -29,7 +33,7 @@ export default {
         lastName: "Jose",
       },
       myhtml: "<h2>Desde el html</h2>",
-      showName: false,
+      showName: true,
       tasks: [
         { title: "Hoy no me quiero levantar" },
         { title: "hoy no cenaré" },
@@ -53,11 +57,16 @@ export default {
     }, //para aceptar datos desde afuera
     props: {
       msg:{
-        type: String 
+        type: String, //debo declara un tipo de datos para poder identificar el tipo
+        default: "Esto es un msj por default"
       }
     }    
 }
 </script>
 
 <style media="screen">
+.test{
+  background-color: red;
+}
+
 </style>

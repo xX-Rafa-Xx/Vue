@@ -2,15 +2,18 @@
   <div id="app">
     <h1>Hola Mundo</h1>
   <Test msg="Hola desde el componente padre"/>
+  <User/>
   </div>
 </template>
 
 <script>
 import Test from './components/Test.vue';
+import User from './components/User.vue';
 export default {  
   name: 'App',
   components: {
-    Test
+    Test,
+    User
   }
 }
 </script>
