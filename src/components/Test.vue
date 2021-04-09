@@ -14,10 +14,22 @@
     las directivas permiten decirle a Vue que interprete el texto como un html
     sirve para manipular el DOM
   -->
-<div v-html="tasks">
+  <hr>
+<!--  <div>{{tasks[0].title}}</div>  Accede al elemento y lo muestra como elemento no como objeto-->
+ <!-- Muestra una lista de tareas mediante un ciclo for como una barra de navegación
+  <ul>
+    <li v-for="task in tasks">
+      {{task.title}}
+    </li>
+  </ul>
+  -->
+  <hr>
   <div v-if="showName">
-    <p>Eres verdadero</p>
-  </div>
+    <p>{{user.lastName}}</p>
+  
+</div>
+<div v-else>
+  <p>Eres falso mi vato</p>
 </div>
 
   </div>

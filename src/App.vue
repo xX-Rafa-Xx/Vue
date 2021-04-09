@@ -1,8 +1,19 @@
 <template>
   <div id="app">
     <h1>Hola Mundo</h1>
-  <Test msg="Hola desde el componente padre"/>
-  <User/>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Test</a>
+        </li>
+        <li>
+          <a href="#">User</a>
+        </li>
+
+      </ul>
+    </nav>
+    <hr>
+    <router-view></router-view>
   </div>
 </template>
 
