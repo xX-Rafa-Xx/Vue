@@ -4,10 +4,15 @@
     <nav>
       <ul>
         <li>
-          <a href="#">Test</a>
+          <router-link to="/test"> 
+            Test
+          </router-link>
         </li>
         <li>
-          <a href="#">User</a>
+          
+          <router-link to="/">  
+            User
+          </router-link>
         </li>
 
       </ul>

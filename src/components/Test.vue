@@ -25,7 +25,7 @@
   -->
   <hr>
   <div v-if="showName">
-    <p>{{user.lastName}}</p>
+    <p>{{user}}</p>
   
 </div>
 <div v-else>
